@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Traveller</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="container banner">
+        <header class="header">
+            <h2><i class="fa-solid fa-earth-americas"></i> <a href="index.html"> Gulliver Traveller</a></h2>
+            <nav class="header__menu">
+                <ul class="links__menu">
+                    <li><a href="#" class="header__menu__item">Como Chegar</a></li>
+                    <li><a href="#" class="header__menu__item">Dicas</a></li>
+                    <li><a href="#" class="header__menu__item">Hospedagem</a></li>
+                    <li><a href="#" class="header__menu__item">Aluguel de Carro</a></li>
+                    <li><a href="#" class="header__menu__item">História</a></li>
+                    <li><a href="#" class="header__menu__item">Cultura</a></li>
+                    <li><a href="#" class="header__menu__item">Parques</a></li>
+                    <li><a href="#" class="header__menu__item">Gastronomia</a></li>
+                    <li><a href="#" class="header__menu__item">Vida Noturna</a></li>
+                    <li><a href="#" class="header__menu__item">Lazer</a></li>
+                </ul>
+                <div class="hamburguer">
+                    <div class="linha"></div>
+                    <div class="linha"></div>
+                    <div class="linha"></div>
+                </div>
+            </nav>
+        </header>
+        <div class="tamanhos">
+            <p>
+                <a href="#" onclick="diminui()" class="diminui">A</a>
+                <a href="#" onclick="padrao()" class="padrao">A</a>
+                <a href="#" onclick="aumenta()" class="aumenta">A</a>
+                <a href="#" onclick="aumentaMais()" class="aumentaMais">A</a>
+                | <span class="dislexia"><a href="#" onclick="dislexia()">Dislexia</a></span>
+                | <span class="roboto"><a href="#" onclick="roboto()">Padrão</a></span>
+                | <a href="#" onclick="contraste()"><i class="fa-solid fa-circle-half-stroke contraste" ></i></a>
+            </p>
+        </div>
+        <div class="header__chamada">
+            <h1 class="header__titulo">Conheça São Paulo</h1>
+            <h3 class="header__texto">A cidade que nunca dorme!</h3>
+            <a href="" class="header__botao">Como chegar <i class="fa-solid fa-route"></i></a>
+
+        </div>
+    </section>
+    <section class="conhecer">
+        <h3>Centro financeiro e cultural do Brasil</h3>
+        <p>
+            Com o 10° maior PIB do mundo, São Paulo é mundialmente conhecida, seja do ponto de vista cultural, econômico
+            ou político. Conta com importantes monumentos, parques, e museus, como o Museu da Lingua Portuguesa, Museu
+            do Ipiranga, MASP, Parque Ibirapuera, Jardim Botânico e a Avenida Paulista.
+        </p>
+        <p>
+            Seja a trabalho, negócios ou turismo a cidade de São Paulo encanta seus visitantes não importa qual seja sua
+            origem ou etnia. Se você planeja visitar a cidade nosso Blog pode ajudar seu planejamento desde sua
+            hospedagem, aluguel de carro, como pontos turísticos, culturais e opções de entretenimento.
+        </p>
+    </section>
+    <section class="destaques">
+        <h3>Explore São Paulo</h3>
+        <ul class="box">
+            <li>
+                <img src="./images/Quarto-hotel.jpeg"
+                    alt="Aconchegante quarto de hotel, com piso laminado de madeira, cama de solteiro com uma colcha branca, uma ilminação confortável focando uma escrivaninha de trabalho com um notebook, ao fundo um elegante quaedro com uma imagem abstrata e ao lado um banco encostado na parede com almofada cinza."
+                    title="Quarto confortável de hotel" srcsets="" class="box__image">
+                <p class="destaques__botao">Reserve seu Hotel</p>
+
+            </li>
+            <li>
+                <img src="./images/Dicas.jpeg" alt="Placa triangular amarela com ponto de exclamação branco."
+                    title="Dicas" srcsets="" class="box__image">
+                <p class="destaques__botao">Dicas Úteis de SP</p>
+            </li>
+            <li>
+                <img src="./images/aluguel-carro.jpeg" alt="Imagem de um mapa, com um pequeno carro preto sobre ele."
+                    title="Aluguel de carro" srcsets="" class="box__image">
+                <p class="destaques__botao">Alugue seu Carro</p>
+            </li>
+            <li>
+                <img src="./images/Museu.jpeg" alt="Foto da fachada de um Museu" title="Museu" srcsets=""
+                    class="box__image">
+                <p class="destaques__botao">Museus de SP</p>
+            </li>
+            <li>
+                <img src="./images/Cultura.jpeg"
+                    alt="Grafismo bem colorido com retrato de uma mulher na parede, com um homem caminhando na calçada"
+                    title="Cultura de São Paulo | Diversidade" srcsets="" class="box__image">
+                <p class="destaques__botao">Passeios Culturais</p>
+            </li>
+            <li>
+                <img src="./images/Parque.jpeg"
+                    alt="Casal caminhando com um cachorro no parque, com árvores ao fundo e pessoas fazendo piquenique na sombra das árvores"
+                    title="Pessoas aproveitando as sombras do parque." srcsets="" class="box__image">
+                <p class="destaques__botao">Parques de SP</p>
+            </li>
+            <li>
+                <img src="./images/gastronomia.jpeg"
+                    alt="Uma mesa quadrada de madeira de demolição rústica, sobre a mesa um menu de restaurante, uma tábua de carne com um apetitoso filé com fritas 3 molhos para carne e uma pequena salada verde, o outro lado da mesa uma prato de salada bem servida com um suco vermelho muito chamativo e vistoso"
+                    title="Opções de Gastronomia" srcsets="" class="box__image">
+                <p class="destaques__botao">Opções Gastronomicas</p>
+            </li>
+            <li>
+                <img src="./images/Balada.jpeg"
+                    alt="Foto de uma casa noturna, com muita gente dançando e um globo de espelho no teto."
+                    title="Baladas de São Paulo" srcsets="" class="box__image">
+                <p class="destaques__botao">Opções para Noite</p>
+            </li>
+            <li>
+                <img src="./images/Cinema.jpeg"
+                    alt="Foto de um grande cinema, com cadeiras vermelhas,tela de projeção ao fundo e passando uma animação."
+                    title="Cinema" srcsets="" class="box__image">
+                <p class="destaques__botao">Opções de Lazer</p>
+            </li>
+        </ul>
+    </section>
+    <footer class="rodape">
+        <ul>
+            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+        </ul>
+        <p>Direitos reservados - Projeto Traveller</p>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="./js/traveller.js"></script>
+</body>
+
+</html>

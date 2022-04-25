@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@font-face {
+    font-family: Douglas;
+    src: url("../fonts/OpenDyslexicAlta-Regular.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    width: 100%;
+    height: 10vh;
+    color: #fff;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(54, 4, 4, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.scroll__active{
+    background-color: rgba(54, 4, 4, 0.9);
+}
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)),
+    url(../images/ponte-espraiada-sao-paulo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.links__menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__menu__item{
+    font-size: 1rem;
+    margin: 0 8px;
+    font-weight: 100;
+}
+.header__menu__item:hover,:focus{
+    font-weight: 700;
+    transition: 0.5s;
+}
+.header__chamada{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.header__titulo{
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 5px;
+    padding-top: 10vh;
+}
+.header__texto{
+    width: 50vw;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+}
+.header__botao{
+    padding: 30px 50px;
+    background-color: rgba(54,4,4,.8);
+    font-size: 1.5rem;
+    border-radius: 10px
+}
+.header__botao:hover,:focus{
+    color: #000;
+    background-color: #ccc;
+    font-weight: 900;
+}
+.tamanhos{
+    position: fixed;
+    top: 10vh;
+    right: 0;
+    margin-bottom: 15px;
+    background-color: rgba(54, 4, 4, 0.2);
+    padding: 10px;
+}
+.tamanhos .diminui{
+    font-size: 14px;
+}
+.tamanhos .padrao{
+    font-size:16px;
+}
+.tamanhos .aumenta{
+    font-size: 18px;
+}
+.tamanhos .aumentaMais{
+    font-size:20px;
+}
+.contraste{
+    color: #fff;
+    font-weight: 800;
+}
+.dislexia{
+    font-family: Douglas;
+    color: #fff;
+}
+.conhecer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+.conhecer h3{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.conhecer p{
+    max-width: 90vw;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.destaques{
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    text-align: center;
+}
+.destaques h3{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.destaques p{
+    max-width: 90vw;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+.destaques .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.destaques .box .box__image{
+    margin: 1.5rem 0;
+    width:90%; 
+    border-radius: 5px;
+    border:1px solid rgb(54,4,4);
+}
+.destaques .box li{
+    margin: 10px;
+    padding: 10px ;
+    text-align: center;
+    width: 30%;
+    border: 1px solid #666;
+    border-radius: 5px; 
+}
+.destaques__botao{
+    background-color: rgb(253, 251, 251);
+    color:rgb(54,4,4);
+    margin: 0 3rem;
+    border-radius: 15px;
+    padding: 15px 20px;
+    font-weight: 900;
+}
+.destaques__botao:hover,:focus{
+    background-color: #000;
+    border: 1px solid rgb(253, 251, 251);
+    color: rgb(253, 251, 251);
+    transition: 0.5s;
+}
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(54,4,4);
+    padding: 50px 0;
+}
+.rodape ul{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+.rodape ul li{
+    margin-right: 15px;
+}
+.rodape ul li a{
+    font-size: 1.5rem;
+}
+.rodape p{
+    color: #fff;
+    text-align: center;
+}
+@media(max-width:1200px){
+    .header{
+        z-index: 10;
+    }
+    .linha{
+        width:30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px;
+    }
+    .header__menu{
+        position: relative;
+    }
+    .header__texto{
+        font-size: 1.3rem;
+    }
+    .hamburguer{
+        position: absolute;
+        right: 0;
+        top: -15px;
+        cursor: pointer;
+    }
+    .links__menu{
+        width: 150px;
+        height: 250px;
+        padding-right: 1vh;
+        background-color: rgba(54, 4, 4, 0.9);
+        position: fixed;
+        right: -100vw;
+        top: 10vh;
+        z-index: 2;
+        transition: 0.5s;
+        flex-direction: column;
+        align-items: flex-end;
+        line-height: 1.5rem;
+    }
+    .links__menu.open{
+        right: 0;
+    }
+    .header__titulo{
+        font-size: 2rem;
+        margin: 2rem;
+    }
+}
+@media(max-width:940px){
+    .destaques .box li{
+        width:40%
+    }
+}
+@media(max-width:450px){
+    html{
+        font-size: 12px;
+    }
+    .destaques .box li{
+        width:90%;
+    }
+}
